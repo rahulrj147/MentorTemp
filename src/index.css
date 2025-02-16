@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+    @apply bg-red-500;  /* Check if Tailwind styles are applying */
+
+
+    
