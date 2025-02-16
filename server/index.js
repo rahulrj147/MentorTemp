@@ -29,14 +29,6 @@ const corsOptions = {
   app.use(cors(corsOptions));
   
 
-const cors = require("cors");
-
-app.use(cors({
-  origin: ["https://mentor-temp.vercel.app"], // Allow requests from your frontend
-  methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
-  credentials: true // Allow cookies if needed
-}));
-
 app.use(
 	fileUpload({
 		useTempFiles:true,
