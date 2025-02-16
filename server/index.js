@@ -21,12 +21,21 @@ connectDB();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-	cors({
-		origin:"http://localhost:3000",
-		credentials:true,
-	})
-)
+
+const corsOptions = {
+	origin: process.env.CORS_ORIGIN,
+	credentials: true
+  };
+  app.use(cors(corsOptions));
+  
+
+const cors = require("cors");
+
+app.use(cors({
+  origin: ["https://mentor-temp.vercel.app"], // Allow requests from your frontend
+  methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
+  credentials: true // Allow cookies if needed
+}));
 
 app.use(
 	fileUpload({
