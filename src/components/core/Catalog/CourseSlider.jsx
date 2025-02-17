@@ -22,7 +22,7 @@ const CourseSlider = ({ Courses }) => {
         <>
           <button
             onClick={scrollLeft}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-400 rounded-full"
           >
             &#8592;
           </button>
@@ -39,13 +39,13 @@ const CourseSlider = ({ Courses }) => {
           </div>
           <button
             onClick={scrollRight}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-400 rounded-full"
           >
             &#8594;
           </button>
         </>
       ) : (
-        <p className="text-xl text-richblack-600">No Course Found</p>
+        <p className="text-xl text-gray-600">No Course Found</p>
       )}
     </div>
   );

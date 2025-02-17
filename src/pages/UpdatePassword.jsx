@@ -40,15 +40,15 @@ function UpdatePassword() {
         <div className="spinner"></div>
       ) : (
         <div className="max-w-[500px] p-4 lg:p-8">
-          <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-richblack-700">
+          <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-gray-700">
             Choose new password
           </h1>
-          <p className="my-4 text-[1.125rem] leading-[1.625rem] text-richblack-500">
+          <p className="my-4 text-[1.125rem] leading-[1.625rem] text-gray-500">
             Almost done. Enter your new password and youre all set.
           </p>
           <form onSubmit={handleOnSubmit}>
             <label className="relative">
-              <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-700">
+              <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-gray-700">
                 New Password <sup className="text-pink-200">*</sup>
               </p>
               <input
@@ -72,7 +72,7 @@ function UpdatePassword() {
               </span>
             </label>
             <label className="relative mt-3 block">
-              <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-700">
+              <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-gray-700">
                 Confirm New Password <sup className="text-pink-200">*</sup>
               </p>
               <input
@@ -98,14 +98,14 @@ function UpdatePassword() {
 
             <button
               type="submit"
-              className="mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-richblack-900"
+              className="mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-gray-900"
             >
               Reset Password
             </button>
           </form>
           <div className="mt-6 flex items-center justify-between">
             <Link to="/login">
-              <p className="flex items-center gap-x-2 text-richblack-700">
+              <p className="flex items-center gap-x-2 text-gray-700">
                 <BiArrowBack /> Back To Login
               </p>
             </Link>

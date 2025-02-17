@@ -71,16 +71,16 @@ const Catalog = () => {
 
         
             <div className="mx-auto flex min-h-[160px]  max-w-maxContentTab flex-col justify-center gap-4 lg:max-w-maxContent ">
-              <p className="text-sm text-richblack-300">
+              <p className="text-sm text-gray-300">
                 {`Home / Catalog / `}
                 <span className="text-pink-800 text-xl capitalize">
                   {catalogPageData?.data?.selectedCategory?.name}
                 </span>
               </p>
-              <p className="text-3xl text-richblack-700 capitalize">
+              <p className="text-3xl text-gray-700 capitalize">
                 {catalogPageData?.data?.selectedCategory?.name}
               </p>
-              <p className="max-w-[870px] text-richblack-700">
+              <p className="max-w-[870px] text-gray-700">
                 {catalogPageData?.data?.selectedCategory?.description}
               </p>
             </div>
@@ -89,12 +89,12 @@ const Catalog = () => {
           {/* Section 1 */}
           <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
             <div className="text-pink-500 lg:text-4xl text-2xl font-bold">Courses to get you started</div>
-            <div className="my-4 flex border-b border-b-richblack-600 text-sm">
+            <div className="my-4 flex border-b border-b-gray-600 text-sm">
               <p
                 className={`px-4 py-2 text-[18px]  ${
                   active === 1
                     ? "border-b border-b-pink-25  underline font-semibold text-yellow-25"
-                    : "text-richblack-500"
+                    : "text-gray-500"
                 } cursor-pointer`}
                 onClick={() => setActive(1)}
               >
@@ -104,7 +104,7 @@ const Catalog = () => {
                 className={`px-4 py-2  text-[18px] ${
                   active === 2
                     ? "border-b border-b-pink-25  underline font-semibold text-yellow-25"
-                    : "text-richblack-500"
+                    : "text-gray-500"
                 } cursor-pointer`}
                 onClick={() => setActive(2)}
               >

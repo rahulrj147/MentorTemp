@@ -20,7 +20,7 @@ export default function Sidebar() {
 
   if (profileLoading || authLoading) {
     return (
-      <div className="grid h-[calc(100vh-3.5rem)] min-w-[220px] items-center border-r-[1px] border-r-richblack-700 bg-richblack-800">
+      <div className="grid h-[calc(100vh-3.5rem)] min-w-[220px] items-center border-r-[1px] border-r-gray-700 bg-gray-800">
         <div className="spinner"></div>
       </div>
     )
@@ -28,7 +28,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="flex h-screen min-w-[220px] flex-col border-r-[1px] border-r-richblack-700 bg-blue-25 py-10">
+      <div className="flex h-screen min-w-[220px] flex-col border-r-[1px] border-r-gray-700 bg-blue-25 py-10">
         <div className="flex flex-col">
           {sidebarLinks.map((link) => {
             if (link.type && user?.accountType !== link.type) return null
@@ -37,7 +37,7 @@ export default function Sidebar() {
             )
           })}
         </div>
-        <div className="mx-auto mt-6 mb-6 h-[1px] w-10/12 bg-richblack-700" />
+        <div className="mx-auto mt-6 mb-6 h-[1px] w-10/12 bg-gray-700" />
         <div className="flex flex-col">
           <SidebarLink
             link={{ name: "Settings", path: "/dashboard/settings" }}
@@ -54,7 +54,7 @@ export default function Sidebar() {
                 btn2Handler: () => setConfirmationModal(null),
               })
             }
-            className="px-8 py-2 text-sm font-medium text-richblack-800"
+            className="px-8 py-2 text-sm font-medium text-gray-800"
           >
             <div className="flex items-center gap-x-2">
               <VscSignOut className="text-lg" />

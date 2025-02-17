@@ -210,13 +210,13 @@ details > summary::-webkit-details-marker {
 
 /* Buttons */
 .yellowButton {
-  /* @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-richblack-900; */
+  /* @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-gray-900; */
   cursor: pointer;
   border-radius: 6px; /* Equivalent to Tailwind's rounded-md */
   background-color: #fffbeb; /* Equivalent to bg-yellow-50 */
   padding: 8px 20px; /* Equivalent to px-[20px] py-[8px] */
   font-weight: 600; /* Equivalent to font-semibold */
-  color: #0f0f0f; /* Equivalent to text-richblack-900 (custom color) */
+  color: #0f0f0f; /* Equivalent to text-gray-900 (custom color) */
 }
 
 
@@ -233,38 +233,38 @@ details > summary::-webkit-details-marker {
   height: 100%;
 } */
 /* .swiper-slide {
-  @apply bg-richblack-800 text-richblack-25 p-3 text-[14px];
+  @apply bg-gray-800 text-gray-50 p-3 text-[14px];
 } */
 /* Swiper CSS Ends */
 
 /* .blackButton {
-  @apply cursor-pointer rounded-md bg-richblack-800 px-[20px] py-[8px] font-semibold text-richblack-5;
+  @apply cursor-pointer rounded-md bg-gray-800 px-[20px] py-[8px] font-semibold text-gray-50;
 }
 .lable-style {
-  @apply text-[18px] text-richblack-900 ;
+  @apply text-[18px] text-gray-900 ;
 }
 .form-style {
-  @apply rounded-lg bg-richblack-50 p-3 text-[16px] leading-[24px] text-richblack-800 shadow-[0_1px_0_10] shadow-white/50 placeholder:text-richblack-500 focus:outline-none;
+  @apply rounded-lg bg-gray-50 p-3 text-[16px] leading-[24px] text-gray-800 shadow-[0_1px_0_10] shadow-white/50 placeholder:text-gray-500 focus:outline-none;
 }
 */
 
 
 /* @layer components {
   .yellowButton {
-    @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-richblack-900;
+    @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-gray-900;
   }
   .section_heading {
-  @apply text-2xl font-bold text-richblack-600 lg:text-4xl;
+  @apply text-2xl font-bold text-gray-600 lg:text-4xl;
 } 
 
  .blackButton {
-  @apply cursor-pointer rounded-md bg-richblack-800 px-[20px] py-[8px] font-semibold text-richblack-5;
+  @apply cursor-pointer rounded-md bg-gray-800 px-[20px] py-[8px] font-semibold text-gray-50;
 }
 .lable-style {
-  @apply text-[18px] text-richblack-900 ;
+  @apply text-[18px] text-gray-900 ;
 }
 .form-style {
-  @apply rounded-lg bg-richblack-50 p-3 text-[16px] leading-[24px] text-richblack-800 shadow-[0_1px_0_10] shadow-white/50 placeholder:text-richblack-500 focus:outline-none;
+  @apply rounded-lg bg-gray-50 p-3 text-[16px] leading-[24px] text-gray-800 shadow-[0_1px_0_10] shadow-white/50 placeholder:text-gray-500 focus:outline-none;
 }
 } */
 
@@ -279,31 +279,31 @@ details > summary::-webkit-details-marker {
 .blackButton {
   cursor: pointer;
   border-radius: 6px; /* Equivalent to rounded-md */
-  background-color: #262626; /* Equivalent to bg-richblack-800 */
+  background-color: #262626; /* Equivalent to bg-gray-800 */
   padding: 8px 20px; /* Equivalent to px-[20px] py-[8px] */
   font-weight: 600; /* Equivalent to font-semibold */
-  color: #e5e5e5; /* Equivalent to text-richblack-5 */
+  color: #e5e5e5; /* Equivalent to text-gray-50 */
 }
 
 /* Label Style */
-.label-style {
-  font-size: 18px; /* Equivalent to text-[18px] */
-  color: #0f0f0f; /* Equivalent to text-richblack-900 */
+.labelstyle {
+  font-size: 28px; /* Equivalent to text-[18px] */
+  color: #0f0f0f; /* Equivalent to text-gray-900 */
 }
 
 /* Form Style */
 .form-style {
   border-radius: 8px; /* Equivalent to rounded-lg */
-  background-color: #fafafa; /* Equivalent to bg-richblack-50 */
+  background-color: #fafafa; /* Equivalent to bg-gray-50 */
   padding: 12px; /* Equivalent to p-3 */
   font-size: 16px; /* Equivalent to text-[16px] */
   line-height: 24px; /* Equivalent to leading-[24px] */
-  color: #262626; /* Equivalent to text-richblack-800 */
-  box-shadow: 0px 1px 0px 10px rgba(255, 255, 255, 0.5); /* Equivalent to shadow-[0_1px_0_10] shadow-white/50 */
+  color: #262626; /* Equivalent to text-gray-800 */
+ /* Equivalent to shadow-[0_1px_0_10] shadow-white/50 */
 }
 
 .form-style::placeholder {
-  color: #737373; /* Equivalent to placeholder:text-richblack-500 */
+  color: #737373; /* Equivalent to placeholder:text-gray-500 */
 }
 
 .form-style:focus {
@@ -314,7 +314,7 @@ details > summary::-webkit-details-marker {
 .section_heading {
   font-size: 24px; /* Equivalent to text-2xl */
   font-weight: bold; /* Equivalent to font-bold */
-  color: #595959; /* Equivalent to text-richblack-600 */
+  color: #595959; /* Equivalent to text-gray-600 */
 }
 
 @media (min-width: 1024px) {

@@ -28,7 +28,7 @@ function ReviewSlider() {
       <div className="w-full mx-auto my-[50px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {reviews.map((review, i) => {
           return (
-            <div key={i} className="flex flex-col h-40 gap-3 w-full bg-richblack-800 p-3 text-[14px] text-richblack-25">
+            <div key={i} className="flex flex-col h-40 gap-3 w-full bg-gray-800 p-3 text-[14px] text-gray-50">
               <div className="flex items-center gap-4">
                 <img
                   src={
@@ -40,13 +40,13 @@ function ReviewSlider() {
                   className="h-9 w-9 rounded-full object-cover"
                 />
                 <div className="flex flex-col">
-                  <h1 className="font-semibold text-richblack-5">{`${review?.user?.firstName} ${review?.user?.lastName}`}</h1>
-                  <h2 className="text-[12px] font-medium text-richblack-500">
+                  <h1 className="font-semibold text-gray-50">{`${review?.user?.firstName} ${review?.user?.lastName}`}</h1>
+                  <h2 className="text-[12px] font-medium text-gray-500">
                     {review?.course?.courseName}
                   </h2>
                 </div>
               </div>
-              <p className="font-medium text-richblack-25">
+              <p className="font-medium text-gray-50">
                 {review?.review.split(" ").length > truncateWords
                   ? `${review?.review.split(" ").slice(0, truncateWords).join(" ")} ...`
                   : `${review?.review}`}

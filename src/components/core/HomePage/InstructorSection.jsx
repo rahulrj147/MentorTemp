@@ -8,7 +8,7 @@ const InstructorSection = () => {
   return (
     <div>
         <div className="flex flex-col lg:flex-row gap-20 items-center">
-         <div className="mx-3  my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
+         <div className="mx-3  my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-500">
                    <video
                      className="h-[600px] w-[1000px]  shadow-[2px_2px_80px]"
                      muted
@@ -25,7 +25,7 @@ const InstructorSection = () => {
               <HighlightText text={"instructor"} />
             </h1>
 
-            <p className="font-medium text-[16px] text-justify w-[90%] text-richblack-300">
+            <p className="font-medium text-[16px] text-justify w-[90%] text-gray-300">
               Instructors from around the world teach millions of students on
               MentorWay. We provide the tools and skills to teach what you
               love.

@@ -26,7 +26,7 @@ export default function MyCourses() {
   return (
     <div>
       <div className="mb-14 flex items-center justify-between ">
-        <h1 className="text-4xl   capitalize font-semibold italic text-center text-richblack-25">My Courses</h1>
+        <h1 className="text-4xl   capitalize font-semibold italic text-center text-gray-50">My Courses</h1>
         <IconBtn
           text="Add Course"
           onclick={() => navigate("/dashboard/add-course")}

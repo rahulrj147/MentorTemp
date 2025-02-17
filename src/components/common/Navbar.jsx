@@ -40,22 +40,22 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-blue-50 border-b border-gray-300 shadow-md z-50">
+    <div className="fixed top-0 left-0 w-full bg-blue-200 border-b border-gray-300 shadow-md z-50">
       <div className="flex items-center justify-between w-11/12 max-w-maxContent mx-auto h-14">
         {/* Logo */}
-        <Link to="/" className="flex items-center text-blue-700 font-bold text-lg italic gap-x-1">
+        <Link to="/" className="flex items-center bg-gradient-to-b from-[#054d53] to-[#033112] text-transparent bg-clip-text font-bold text-lg italic gap-x-1">
           <img src={logo} alt="Logo" width={35} height={12} loading="lazy" />
           <p>MentorWay</p>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex gap-x-6 text-richblack-800">
+          <ul className="flex gap-x-6 text-gray-800">
             {NavbarLinks.map((link, index) => (
               <li key={index}>
                 {link.title === "Catalog" ? (
                   <div className={`group relative flex cursor-pointer items-center gap-1 ${
-                    matchRoute("/catalog/:catalogName") ? "text-blue-800" : "text-richblack-600"
+                    matchRoute("/catalog/:catalogName") ? "text-blue-800" : "text-gray-600"
                   }`}>
                     <p>Catalog</p>
                     <BsChevronDown />
@@ -83,7 +83,7 @@ function Navbar() {
                 ) : (
                   <Link to={link.path}>
                     <p className={`hover:underline transition-all ${
-                      matchRoute(link.path) ? "text-blue-900" : "text-richblack-900"
+                      matchRoute(link.path) ? "text-blue-900" : "text-gray-900"
                     }`}>
                       {link.title}
                     </p>
@@ -155,7 +155,7 @@ function Navbar() {
                       <Link
                         key={i}
                         to={`/catalog/${subLink.name.split(" ").join("-").toLowerCase()}`}
-                        className="block py-2 px-4 hover:bg-gray-200"
+                        className="block py-2 px-4 hover:bg-gray-400"
                         onClick={() => {
                           setIsCatalogOpen(false);
                           setIsOpen(false);

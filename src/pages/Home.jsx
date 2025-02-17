@@ -23,7 +23,7 @@ function Home() {
         {/* Become a Instructor Button */}
         <Link to={"/signup"}>
           <div className="group mx-auto  mt-16 w-fit rounded-full bg-black p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.75)] transition-all duration-200 hover:scale-110 hover:drop-shadow-none">
-            <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900">
+            <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-gray-950">
               <p>Become an Instructor</p>
               <FaArrowRight />
             </div>
@@ -37,14 +37,14 @@ function Home() {
         </div>
 
         {/* Sub Heading */}
-        <div className="-mt-3 w-[90%] flex flex-col text-center text-lg font-bold text-gray-700">
+        <div className="-mt-3 w-[90%] flex flex-col text-center text-lg font-bold text-gray-600">
           <span>
             Master Coding with Ease Join our online coding platform and unlock
             endless learning opportunities. Whether you're a beginner or an
             advanced learner, gain hands-on experience with real-world projects,
             interactive quizzes, and expert guidance.
           </span>
-          <span className="mt-3 text-richblack-600" >
+          <span className="mt-3 text-gray-950" >
             Learn anytime, anywhere, and build the future you envision!
           </span>
         </div>
@@ -124,7 +124,7 @@ function Home() {
               link: "/signup",
               active: false,
             }}
-            codeColor={"text-richblack-700"}
+            codeColor={"text-gray-700"}
             codeblock={`import React from "react";\n import CTAButton from "./Button";\nimport TypeAnimation from "react-type";\nimport { FaArrowRight } from "react-icons/fa";\n\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
             backgroundGradient={<div className="codeblock2 absolute"></div>}
           />
@@ -135,7 +135,7 @@ function Home() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-pure-greys-5 text-richblack-700">
+      <div className="bg-pure-greys-5 text-gray-700">
         <div className="homepage_bg h-[320px]">
           {/* Explore Full Catagory Section */}
           <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
@@ -182,7 +182,7 @@ function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col  justify-between gap-8 bg-richblack-900 text-white">
+      <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col  justify-between gap-8 bg-gray-950 text-white">
         {/* Become a instructor section */}
         <InstructorSection />
 
