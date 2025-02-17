@@ -22,7 +22,7 @@ function Home() {
       <div className="relative mx-auto my-10 flex w-11/12  max-w-maxContent flex-col items-center justify-between gap-8 text-rich-">
         {/* Become a Instructor Button */}
         <Link to={"/signup"}>
-          <div className="group mx-auto text-2xl mt-16 w-fit rounded-full bg-black p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.75)] transition-all duration-200 hover:scale-110 hover:drop-shadow-none">
+          <div className="group mx-auto  mt-16 w-fit rounded-full bg-black p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.75)] transition-all duration-200 hover:scale-110 hover:drop-shadow-none">
             <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900">
               <p>Become an Instructor</p>
               <FaArrowRight />
@@ -37,7 +37,7 @@ function Home() {
         </div>
 
         {/* Sub Heading */}
-        <div className="-mt-3 w-[90%] flex flex-col text-center text-lg font-bold text-richblack-300">
+        <div className="-mt-3 w-[90%] flex flex-col text-center text-lg font-bold text-gray-700">
           <span>
             Master Coding with Ease Join our online coding platform and unlock
             endless learning opportunities. Whether you're a beginner or an
