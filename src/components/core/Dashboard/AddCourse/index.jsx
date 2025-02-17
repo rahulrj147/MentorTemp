@@ -5,7 +5,7 @@ export default function AddCourse() {
     <>
       <div className="flex w-full items-start gap-x-6">
         <div className="flex flex-1 flex-col">
-          <h1 className="text-3xl capitalize font-semibold italic mb-6 text-gray-50">
+          <h1 className="text-3xl capitalize font-semibold italic mb-6 text-gray-700">
             Add Course
           </h1>
           <div className="flex-1">

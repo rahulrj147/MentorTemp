@@ -39,10 +39,10 @@ export default function Instructor() {
     return (
       <div>
         <div className="space-y-2">
-          <h1 className="text-2xl font-bold text-gray-50">
+          <h1 className="text-2xl font-bold text-gray-700">
             Hi {user?.firstName} 👋
           </h1>
-          <p className="font-medium text-gray-400">
+          <p className="font-medium text-gray-500">
             Let's start something new
           </p>
         </div>

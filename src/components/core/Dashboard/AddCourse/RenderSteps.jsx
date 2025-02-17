@@ -25,7 +25,7 @@ export default function RenderSteps() {
   ]
 
   return (
-    <>
+    <div>
       <div className="relative mb-2 flex w-full justify-center  ">
         {steps.map((item) => (
           <>
@@ -36,9 +36,9 @@ export default function RenderSteps() {
               <button
                 className={`grid cursor-default aspect-square italic w-[34px] place-items-center rounded-full border-[1px] ${
                   step === item.id
-                    ? "border-white text-[18px] font-semibold text-black bg-white "
+                    ? "border-yellow-400 text-[18px] font-semibold text-black bg-yellow-400 "
                     : "border-gray-700 bg-gray-800 text-gray-300"
-                } ${step > item.id && "bg-white text-white"}} `}
+                } ${step > item.id && "bg-white text-yellow-400"}} `}
               >
                 {step > item.id ? (
                   <FaCheck className="font-bold text-gray-900" />
@@ -71,7 +71,7 @@ export default function RenderSteps() {
               
               <p
                 className={`text-sm ${
-                  step >= item.id ? "text-gray-50" : "text-gray-500"
+                  step >= item.id ? "text-yellow-400 font-bold" : "text-gray-500"
                 }`}
               >
                 {item.title}
@@ -85,6 +85,6 @@ export default function RenderSteps() {
       {step === 1 && <CourseInformationForm />}
       {step === 2 && <CourseBuilderForm />}
       {step === 3 &&  <PublishCourse /> }
-    </>
+    </div>
   )
 }

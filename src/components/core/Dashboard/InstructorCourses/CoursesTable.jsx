@@ -79,7 +79,7 @@ export default function CoursesTable({ courses, setCourses }) {
                     className="h-[148px] w-[220px] rounded-lg object-cover"
                   />
                   <div className="flex flex-col justify-between">
-                    <p className="text-lg font-semibold text-gray-50">
+                    <p className="text-lg font-semibold text-shadow">
                       {course.courseName}
                     </p>
                     <p className="text-xs text-gray-300">
