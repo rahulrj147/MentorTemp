@@ -19,7 +19,7 @@ export default function SidebarLink({ link, iconName }) {
       onClick={() => dispatch(resetCourseState())}
       className={`relative px-8 py-2 text-sm font-medium   ${
         matchRoute(link.path)
-          ? "bg-blue-50 text-richblue-800 hover:scale-110  "
+          ? "bg-blue-600 text-black hover:scale-110  "
           : "bg-opacity-0 text-gray-800 hover:scale-110 "
       } transition-all duration-200`}
     >
