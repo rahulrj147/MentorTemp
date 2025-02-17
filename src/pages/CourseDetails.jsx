@@ -212,7 +212,7 @@ function CourseDetails() {
         <div className="mx-auto max-w-maxContentTab lg:mx-0 xl:max-w-[810px]">
           {/* What will you learn section */}
           <div className="my-8 border boxi border-gray-600 p-8">
-            <p className="text-3xl font-semibold">What you'll learn</p>
+            <p className="text-3xl  text-gray-900 font-semibold">What you'll learn</p>
             <div className="mt-5">
               <ReactMarkdown>{whatYouWillLearn}</ReactMarkdown>
             </div>

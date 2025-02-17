@@ -57,7 +57,7 @@ function VerifyEmail() {
           <h1 className="text-gray-700 font-semibold text-[1.875rem] leading-[2.375rem]">
             Verify Email
           </h1>
-          <p className="text-[1.125rem] leading-[1.625rem] my-4 text-gray-400">
+          <p className="text-[1.125rem] leading-[1.625rem] my-4 text-gray-700">
             A verification code has been sent to you. Enter the code below
           </p>
           <form onSubmit={handleVerifyAndSignup}>
@@ -82,7 +82,7 @@ function VerifyEmail() {
             />
             <button
               type="submit"
-              className="w-full bg-yellow-50 py-[12px] px-[12px] rounded-[8px] mt-6 font-medium text-gray-900"
+              className="w-full bg-yellow-400 py-[12px] px-[12px] rounded-[8px] mt-6 font-medium text-gray-900"
             >
               Verify Email
             </button>
