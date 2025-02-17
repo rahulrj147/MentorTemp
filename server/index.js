@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-	origin: process.env.CORS_ORIGIN  ,
+	origin:[ process.env.CORS_ORIGIN , "http://localhost:3000"] ,
 	credentials: true
   };
   app.use(cors(corsOptions));

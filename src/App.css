@@ -46,7 +46,7 @@ details > summary::-webkit-details-marker {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 9px solid #f1f2ff;
+  border: 9px solid #434556;
   animation: spinner-bulqg1 0.8s infinite linear alternate,
     spinner-oaa3wk 1.6s infinite linear;
 }
@@ -326,8 +326,46 @@ details > summary::-webkit-details-marker {
 
 
 
+.shode{
+  text-shadow: 10px 10px 200px #032138;
+  font-weight: bold;
+
+}
 
 
+.btn{
+  width: fit-content;
+  text-shadow:1px 2px 5px  #fefce8;
+
+  cursor: pointer;
+  font-weight:500 ;
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before{
+  content: "";
+  color: black;
+  position: absolute;
+  text-shadow: 10px 10px 10px rgb(149, 136, 136) ;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.2s;
+}
+
+.btn:hover::before{
+  transform: scaleX(1);
+}
+
+/* @keyframes bada {
+  from{
+      width: 10px;
+  }
+  to{
+      width: 300px;
+  }
+} */
 
 
 

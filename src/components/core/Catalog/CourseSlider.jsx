@@ -32,7 +32,7 @@ const CourseSlider = ({ Courses }) => {
             style={{ scrollSnapType: 'x mandatory', whiteSpace: 'nowrap' }}
           >
             {Courses.map((course, i) => (
-              <div key={i} className="flex-shrink-0 w-[250px]">
+              <div key={i} className=" w-auto">
                 <Course_Card course={course} Height={'h-[250px]'} />
               </div>
             ))}

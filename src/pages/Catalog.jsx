@@ -65,33 +65,33 @@ const Catalog = () => {
       }
     
       return (
-        <>
+        <div >
           {/* Hero Section */}
-          <div className="box-content text-black pt-10 box-shadow1 px-4 mt-20 sm:mt-0">
+          <div className="box-content ml-8  text-black pt-10  px-4 mt-12 ">
 
         
             <div className="mx-auto flex min-h-[160px]  max-w-maxContentTab flex-col justify-center gap-4 lg:max-w-maxContent ">
-              <p className="text-sm text-gray-300">
+              <p className="text-sm font-bold text-gray-600">
                 {`Home / Catalog / `}
-                <span className="text-pink-800 text-xl capitalize">
+                <span className="text-pink-900 text-xl capitalize">
                   {catalogPageData?.data?.selectedCategory?.name}
                 </span>
               </p>
               <p className="text-3xl text-gray-700 capitalize">
                 {catalogPageData?.data?.selectedCategory?.name}
               </p>
-              <p className="max-w-[870px] text-gray-700">
+              <p className="max-w-[870px]  text-gray-700">
                 {catalogPageData?.data?.selectedCategory?.description}
               </p>
             </div>
           </div>
     
           {/* Section 1 */}
-          <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
-            <div className="text-pink-500 lg:text-4xl text-2xl font-bold">Courses to get you started</div>
+          <div className=" mx-auto  ml-4 box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
+            <div className="text-emerald-700  ml-4 lg:text-4xl text-2xl font-bold">Courses to get you started</div>
             <div className="my-4 flex border-b border-b-gray-600 text-sm">
               <p
-                className={`px-4 py-2 text-[18px]  ${
+                className={`px-4 py-2  text-[18px]  ${
                   active === 1
                     ? "border-b border-b-pink-25  underline font-semibold text-yellow-25"
                     : "text-gray-500"
@@ -103,7 +103,7 @@ const Catalog = () => {
               <p
                 className={`px-4 py-2  text-[18px] ${
                   active === 2
-                    ? "border-b border-b-pink-25  underline font-semibold text-yellow-25"
+                    ? "border-b border-b-red-500 font-bold underline  text-yellow-25"
                     : "text-gray-500"
                 } cursor-pointer`}
                 onClick={() => setActive(2)}
@@ -111,18 +111,18 @@ const Catalog = () => {
                 New
               </p>
             </div>
-            <div>
+            <div className='w-auto ' >
               <CourseSlider
                 Courses={catalogPageData?.data?.selectedCategory?.courses}
               />
             </div>
           </div>
           {/* Section 2 */}
-          <div className=" mx-auto box-content w-full  max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
-            <div className="text-blue-500 lg:text-4xl text-2xl font-bold">
+          <div className=" ml-4 mx-auto box-content w-full  max-w-maxContentTab px-4 py-12 ">
+            <div className="text-blue-500  ml-4 lg:text-4xl text-2xl font-bold">
               Top courses in {catalogPageData?.data?.differentCategory?.name}
             </div>
-            <div className="py-8">
+            <div className="w-auto">
               <CourseSlider
                 Courses={catalogPageData?.data?.differentCategory?.courses}
               />
@@ -130,9 +130,9 @@ const Catalog = () => {
           </div>
     
           {/* Section 3 */}
-          <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
-            <div className="text-yellow-500 lg:text-4xl text-2xl font-bold">Frequently Bought</div>
-            <div className="py-8">
+          <div className=" mx-auto box-content  w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
+            <div className="text-yellow-500  ml-8 mx-auto lg:text-4xl text-2xl font-bold">Frequently Bought</div>
+            <div className="py-8 w-10/12 mx-auto  ">
               <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
                 {catalogPageData?.data?.mostSellingCourses
                   ?.slice(0, 4)
@@ -144,7 +144,7 @@ const Catalog = () => {
           </div>
     
           <Footer />
-        </>
+        </div>
       )
     }
     

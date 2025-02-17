@@ -54,10 +54,10 @@ function Navbar() {
             {NavbarLinks.map((link, index) => (
               <li key={index}>
                 {link.title === "Catalog" ? (
-                  <div className={`group relative flex cursor-pointer items-center gap-1 ${
+                  <div className={`group relative flex mt-4  cursor-pointer items-center gap-1 ${
                     matchRoute("/catalog/:catalogName") ? "text-blue-800" : "text-gray-600"
                   }`}>
-                    <p>Catalog</p>
+                    <p className="text-black  font-bold" >Catalog</p>
                     <BsChevronDown />
                     {/* Hover Dropdown - Desktop */}
                     <div className="invisible absolute left-[50%] top-full z-10 flex w-[200px] translate-x-[-50%] flex-col rounded-lg bg-white p-4 text-gray-900 opacity-0 shadow-md transition-all duration-200 group-hover:visible group-hover:opacity-100">
@@ -82,10 +82,17 @@ function Navbar() {
                   </div>
                 ) : (
                   <Link to={link.path}>
-                    <p className={`hover:underline transition-all ${
-                      matchRoute(link.path) ? "text-blue-900" : "text-gray-900"
+                    <p className={`hover:scale-125 hover:shode mt-4 hover:text-violet-900 btn transition-all duration:4s ${
+                      matchRoute(link.path) ?  "text-blue-900" : "  text-gray-900"
                     }`}>
                       {link.title}
+
+                      <div
+  className={`relative h-0.5 w-0 transition-all duration-300 ${
+    matchRoute(link.path) ? "mt-4 w-full bg-amber-700" : "hover:w-full hover:bg-amber-700"
+  }`}
+></div>
+
                     </p>
                   </Link>
                 )}
@@ -186,12 +193,12 @@ function Navbar() {
     {token === null ? (
       <>
         <Link to="/login" onClick={() => setIsOpen(false)}>
-          <button className="w-full px-4 py-2 border rounded-md bg-gray-800 text-black hover:bg-gray-700">
+          <button className="w-full hover:scale-110 px-4 py-2 border rounded-md bg-gray-800  hover:bg-gray-500">
             Log in
           </button>
         </Link>
         <Link to="/signup" onClick={() => setIsOpen(false)}>
-          <button className="w-full px-4 py-2 border rounded-md bg-gray-800 text-black hover:bg-gray-700">
+          <button className="w-full px-4 py-2 border rounded-md bg-gray-800  hover:bg-gray-700">
             Sign up
           </button>
         </Link>
