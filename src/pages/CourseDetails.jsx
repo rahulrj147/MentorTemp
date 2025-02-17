@@ -213,7 +213,7 @@ function CourseDetails() {
           {/* What will you learn section */}
           <div className="my-8 border boxi border-gray-600 p-8">
             <p className="text-3xl  text-gray-900 font-semibold">What you'll learn</p>
-            <div className="mt-5">
+            <div className="mt-5 text-gray-700 ">
               <ReactMarkdown>{whatYouWillLearn}</ReactMarkdown>
             </div>
           </div>
