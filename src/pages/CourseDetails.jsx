@@ -145,7 +145,7 @@ function CourseDetails() {
 
   return (
     <>
-      <div className={`relative w-auto mt-20 bg-gray-800`}>
+      <div className={`relative w-auto mt-16 bg-gray-800`}>
         {/* Hero Section */}
         <div className="mx-auto box-content px-4 lg:w-[1260px] 2xl:relative ">
           <div className="mx-auto grid min-h-[450px] max-w-maxContentTab justify-items-center py-8 lg:mx-0 lg:justify-items-start lg:py-0 xl:max-w-[810px]">
