@@ -18,7 +18,7 @@ function Dashboard() {
   }
 
   return (
-    <div className="flex h-screen  translate-y-14 bg-gray-800">
+    <div className="flex h-screen  translate-y-14 onee">
       {/* Sidebar - Fixed for Desktop, Toggle for Mobile */}
       <div className={`fixed md:relative inset-y-0 left-0 z-50 w-64 bg-gray-950 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}>
         <Sidebar />

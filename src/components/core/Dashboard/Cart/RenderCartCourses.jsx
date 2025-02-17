@@ -24,14 +24,14 @@ export default function RenderCartCourses() {
               className="h-[148px] w-[220px] rounded-lg object-cover"
             />
             <div className="flex flex-col space-y-1">
-              <p className="text-lg font-medium text-gray-50">
+              <p className="text-lg capitalize font-medium text-gray-800">
                 {course?.courseName}
               </p>
-              <p className="text-sm text-gray-300">
+              <p className="text-sm text-gray-800">
                 {course?.category?.name}
               </p>
               <div className="flex items-center gap-2">
-                <span className="text-yellow-5">4.5</span>
+                <span className="text-yellow-400">4.5</span>
                 <ReactStars
                   count={5}
                   value={course?.ratingAndReviews?.length}
@@ -55,7 +55,7 @@ export default function RenderCartCourses() {
               <RiDeleteBin6Line />
               <span>Remove</span>
             </button>
-            <p className="mb-6 text-3xl font-medium text-yellow-100">
+            <p className="mb-6 text-3xl font-medium text-yellow-600">
               ₹ {course?.price}
             </p>
           </div>

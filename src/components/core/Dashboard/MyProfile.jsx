@@ -11,10 +11,10 @@ export default function MyProfile() {
 
   return (
     <>
-      <h1 className="mb-14 text-4xl  capitalize font-semibold italic  text-gray-50">
+      <h1 className="mb-14 text-4xl  capitalize font-semibold italic  text-gray-700">
         My Profile
       </h1>
-      <div className="boxi rounded-md  ">
+      <div className=" rounded-md bg-blue-500 boxi">
       <div>
         <div className="flex items-center   justify-between rounded-md p-8 px-12 ">
         <div className="flex items-center gap-x-4">
@@ -23,11 +23,11 @@ export default function MyProfile() {
             alt={`profile-${user?.firstName}`}
             className="aspect-square w-[78px] rounded-full object-cover"
           />
-          <div className="space-y-1">
-            <p className="text-lg font-semibold text-gray-50 capitalize">
+          <div className="space-y-1  ">
+            <p className="text-lg font-semibold text-shadow capitalize">
               {user?.firstName + " " + user?.lastName}
             </p>
-            <p className="text-sm text-gray-50">{user?.email}</p>
+            <p className="text-sm text-shadow">{user?.email}</p>
           </div>
         </div>
         <IconBtn
@@ -41,9 +41,9 @@ export default function MyProfile() {
       </div>
       </div>
       </div>
-      <div className="my-10 boxi flex flex-col gap-y-10 rounded-md p-8 px-12">
+      <div className="my-10 boxi  flex flex-col gap-y-10 rounded-md p-8 px-12">
         <div className="flex  w-full items-center justify-between">
-          <p className="text-lg font-semibold text-gray-50">About</p>
+          <p className="text-2xl font-semibold text-shadow">About</p>
           <IconBtn
             text="Edit"
             onclick={() => {
@@ -56,16 +56,16 @@ export default function MyProfile() {
         <p
           className={`${
             user?.additionalDetails?.about
-              ? "text-gray-50"
+              ? "text-shadow"
               : "text-gray-50"
-          } text-sm font-medium `}
+          } text-lg font-medium `}
         >
           {user?.additionalDetails?.about ?? "Write Something About Yourself"}
         </p>
       </div>
       <div className="my-10 flex boxi flex-col gap-y-10 rounded-md p-8 px-12">
         <div className="flex w-full items-center justify-between">
-          <p className="text-lg font-semibold text-gray-50">
+          <p className="text-2xl font-semibold text-shadow">
             Personal Details
           </p>
           <IconBtn
@@ -80,40 +80,40 @@ export default function MyProfile() {
         <div className="flex max-w-[500px] justify-between">
           <div className="flex flex-col gap-y-5">
             <div>
-              <p className="mb-2 text-sm text-gray-400">First Name</p>
-              <p className="text-md text-gray-50 font-bold capitalize">
+              <p className="mb-2 text-sm  text-white ">First Name</p>
+              <p className="text-md text-shadow font-bold capitalize">
                 {user?.firstName}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-gray-400">Email</p>
-              <p className="text-md text-gray-50 font-bold ">
+              <p className="mb-2 text-sm text-white">Email</p>
+              <p className="text-md text-shadow font-bold ">
                 {user?.email}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-gray-400">Gender</p>
-              <p className="text-md text-gray-50 font-bold capitalize">
+              <p className="mb-2 text-sm text-white">Gender</p>
+              <p className="text-md text-shadow font-bold capitalize">
                 {user?.additionalDetails?.gender ?? "Add Gender"}
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-y-5">
             <div>
-              <p className="mb-2 text-sm text-gray-400">Last Name</p>
-              <p className="text-md text-gray-50 font-bold capitalize">
+              <p className="mb-2 text-sm text-white">Last Name</p>
+              <p className="text-md text-shadow font-bold capitalize">
                 {user?.lastName}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-gray-400">Phone Number</p>
-              <p className="text-md text-gray-50 font-bold capitalize">
+              <p className="mb-2 text-sm text-white">Phone Number</p>
+              <p className="text-md text-shadow font-bold capitalize">
                 {user?.additionalDetails?.contactNumber ?? "Add Contact Number"}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-gray-400">Date Of Birth</p>
-              <p className="text-md text-gray-50 font-bold capitalize">
+              <p className="mb-2 text-sm text-white">Date Of Birth</p>
+              <p className="text-md text-shadow font-bold capitalize">
                 {formattedDate(user?.additionalDetails?.dateOfBirth) ??
                   "Add Date Of Birth"}
               </p>

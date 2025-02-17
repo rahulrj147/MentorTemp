@@ -8,8 +8,8 @@ export default function Cart() {
 
   return (
     <>
-      <h1 className="mb-14 text-3xl font-medium text-gray-50">Cart</h1>
-      <p className="border-b border-b-gray-400 pb-2 font-semibold text-gray-400">
+      <h1 className="mb-14 text-3xl font-medium text-gray-700">Cart</h1>
+      <p className="border-b border-b-gray-400 pb-2 font-semibold text-gray-700">
         {totalItems} Courses in Cart
       </p>
       {total > 0 ? (

@@ -373,7 +373,7 @@ details > summary::-webkit-details-marker {
 
 
 .boxi{
-  background-color: rgb(22 29 41 / var(--tw-bg-opacity));
+  background-color: #2b7fff;
   box-shadow: 1px 1px 200px 1px #8dbbde;
 }
 .box-shadow1{
@@ -387,4 +387,13 @@ details > summary::-webkit-details-marker {
   border-radius: 6px; /* Equivalent to rounded-md */
   background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
   padding: 16px; /* Equivalent to p-4 */
+}
+
+.text-shadow{
+  color: rgb(255, 252, 252);
+  text-shadow:2px 1px 2px rgb(0, 0, 0) ;
+  
+}
+.onee{
+  background-color: #F0F4F8;
 }
